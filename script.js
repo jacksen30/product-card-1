@@ -17,17 +17,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
             btnSecondary.style.transform = '';
             btnSecondary.style.zIndex = '0';
         }
+
+        // Update the z-index for .front after the flip
+        if (card.classList.contains('flipped')) {
+            card.classList.remove('flipped');
+        } else {
+            card.classList.add('flipped');
+        }
     };
 
     btnPrimary.addEventListener('click', flip);
     btnSecondary.addEventListener('click', flip);
-
-    // Testing events
-    btnPrimary.addEventListener('click', () => {
-        console.log('Primary Button Clicked');
-    });
-
-    btnSecondary.addEventListener('click', () => {
-        console.log('Secondary Button Clicked');
-    });
 });

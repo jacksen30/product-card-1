@@ -28,7 +28,13 @@ body {
 }
 
 .front {
+  z-index: 2;
+  transition: z-index 0.6s 0.6s; /* Delay z-index swap until flip is halfway */
   background-color: #fff;
+}
+
+.card.flipped .front {
+  z-index: 0;
 }
 
 .back {
