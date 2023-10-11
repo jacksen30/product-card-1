@@ -95,6 +95,5 @@ body {
 
 .button-card--secondary {
   position: absolute;
-  top: 1.2rem;
-  left: 1.2rem;
+  transform: translate(-130px, 20px);
 }
