@@ -92,8 +92,3 @@ body {
   padding: 10px 15px;
   font-size: 16px;
 }
-
-.button-card--secondary {
-  position: absolute;
-  transform: translate(-130px, 20px);
-}
