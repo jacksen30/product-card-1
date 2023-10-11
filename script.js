@@ -1,4 +1,5 @@
 function flip() {
+    alert("Flip function was called.");
     console.log("Flip function called.");  // This will log a message in the console every time the flip function is called
 
     const card = document.querySelector('.card');
