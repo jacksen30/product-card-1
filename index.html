@@ -4,20 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Double Sided Product Card</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div class="card-container">
     <div class="card">
       <div class="card-face front">
-        <h2>Product Name</h2>
-        <p>Some brief description of the product...</p>
-        <button onclick="flip()">See Details</button>
+        <div class="img-wrapper">
+          <img src="./coffee-requires-crop-resize.jfif" alt="">
+        </div>
+        <button class="button-card--primary" onclick="flip()">See Details</button>
       </div>
       <div class="card-face back">
-        <h2>Product Details</h2>
-        <p>Here are some details about the product...</p>
-        <button onclick="flip()">Go Back</button>
+        <button class="button-card--secondary" onclick="flip()">Back</button>
       </div>
     </div>
   </div>

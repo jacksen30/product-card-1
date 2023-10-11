@@ -1,3 +1,35 @@
+/* CSS RESET - undo the varying default styling applied by web browsers to HTML elements */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* MY CUSTOM CSS RULES BELOW */
+
 body {
   display: flex;
   align-items: center;
@@ -12,8 +44,8 @@ body {
 }
 
 .card {
-  width: 300px;
-  height: 400px;
+  width: 350px;
+  height: 510px;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
@@ -26,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   /* padding: 20px; */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 10px;
@@ -34,6 +66,16 @@ body {
 
 .front {
   background-color: #fff;
+}
+
+/* this has been updated to target the inner img not the wrapper */
+.img-wrapper img {
+  width: 349px;
+  height: 198px;
+  border-radius: 8px 8px 2.6px 2.6px;
+  background-color: bisque;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .back {
@@ -45,8 +87,14 @@ body {
   transform: rotateY(180deg);
 }
 
-button {
+.button-card--primary {
   margin-top: 20px;
   padding: 10px 15px;
   font-size: 16px;
 }
+
+.button-card--secondary {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+  }
