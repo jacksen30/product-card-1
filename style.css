@@ -94,7 +94,6 @@ body {
 }
 
 .button-card--secondary {
-  margin-top: 20px;
-  padding: 10px 15px;
-  font-size: 16px;
-  }
+  align-self: flex-start;
+  margin: 1.2rem;
+}
