@@ -94,6 +94,5 @@ body {
 }
 
 .button-card--secondary {
-  align-self: flex-start;
-  margin: 1.2rem;
+  position: absolute;
 }
