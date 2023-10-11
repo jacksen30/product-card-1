@@ -22,5 +22,5 @@ function flip() {
 
 // Ensure the DOM is fully loaded before attaching the event listener
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelector('.button-card--secondary').addEventListener('click', flip);
+    document.querySelector('.button-card--secondary').addEventListener('touchend', flip);
 });
