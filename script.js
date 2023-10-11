@@ -11,3 +11,5 @@ function flip() {
         btnSecondary.style.zIndex = "0";
     }
 }
+
+document.querySelector('.button-card--secondary').addEventListener('click', flip);
