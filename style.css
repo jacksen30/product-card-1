@@ -7,9 +7,9 @@ body {
   background-color: #f0f0f0;
 }
 
-.card-container {
+/* .card-container {
   perspective: 1000px;
-}
+} */
 
 .card {
   width: 350px;
@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   /* padding: 20px; */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
   border-radius: 10px;
 }
 
@@ -37,14 +37,14 @@ body {
 }
 
 /* this has been updated to target the inner img not the wrapper */
-.img-wrapper img {
+/* .img-wrapper img {
   width: 349px;
   height: 198px;
   border-radius: 8px 8px 2.6px 2.6px;
   background-color: bisque;
   object-fit: cover;
   overflow: hidden;
-}
+} */
 
 .back {
   background-color: #eee;
