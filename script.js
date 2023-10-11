@@ -1,32 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const card = document.querySelector('.card');
-    const btnSecondary = document.querySelector('.button-card--secondary');
+document.addEventListener('DOMContentLoaded', (event) => {
     let isFlipped = false;
 
-    function flip() {
-        alert("Flip function was called.");
-        console.log("Flip function called.");
+    const card = document.querySelector('.card');
+    const btnPrimary = document.querySelector('.button-card--primary');
+    const btnSecondary = document.querySelector('.button-card--secondary');
 
-        isFlipped = !isFlipped; // Toggle flip state
+    const flip = () => {
+        isFlipped = !isFlipped;
 
         if (isFlipped) {
-            card.style.transform = "rotateY(180deg)";
+            card.style.transform = 'rotateY(180deg)';
             btnSecondary.style.transform = 'translate(-130px, 20px)';
-            btnSecondary.style.zIndex = "2";
+            btnSecondary.style.zIndex = '2';
         } else {
-            card.style.transform = "";
+            card.style.transform = '';
             btnSecondary.style.transform = '';
-            btnSecondary.style.zIndex = "0";
+            btnSecondary.style.zIndex = '0';
         }
+    };
 
-        // Trigger a reflow to ensure transformations take effect
-        card.style.display = 'none';
-        card.offsetHeight;
-        card.style.display = '';
-    }
-
-    btnSecondary.addEventListener('touchend', flip);
+    btnPrimary.addEventListener('click', flip);
     btnSecondary.addEventListener('click', flip);
+
+    // Testing events
+    btnPrimary.addEventListener('click', () => {
+        console.log('Primary Button Clicked');
+    });
+
+    btnSecondary.addEventListener('click', () => {
+        console.log('Secondary Button Clicked');
+    });
 });
-
-
